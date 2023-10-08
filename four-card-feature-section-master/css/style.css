@@ -1,0 +1,98 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+body{
+    background-color: rgb(241, 241, 241);
+    font-family: Poppins; 
+    font-size: 11px;
+    margin: 0;
+}
+.card{
+  box-shadow: 8px 8px 8px rgba(0,0,0,0.09);
+  position: relative;
+  max-width: 330px;
+  min-width: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  margin: 10px 10px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+img{
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+div > h3{
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 10px;
+  line-height: 1em;
+
+} 
+div > p{
+  font-size: 15px;
+  color: grey;
+  left: 3px; 
+}
+div > h2{
+  font-size: 20px;
+  color: grey;
+  left: 3px;
+  line-height: 0.5em; 
+}
+.grid{
+  display: grid;
+  gap: 15px;
+  justify-content: center;
+  grid-template-columns: repeat(6,1fr);
+  background-color:#fafafa;
+  place-items: center;
+}
+
+.header{
+  grid-column: span 6;
+  text-align: center;
+  margin: 10px auto;  
+}
+.border-top-color-cyan{
+  grid-column: span 2;
+  justify-self: right;
+}
+.middle{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column: span 2;
+}
+.border-top-color-blue{
+  grid-column: span 2;
+  justify-self: left;
+}
+footer{
+  grid-column: span 6;
+}
+
+.border-top-color-cyan {
+    border-top: 3px solid #45d3d3; }
+ .red {
+    border-top: 3px solid #ea5353; }
+.yellow {
+    border-top: 3px solid #fcaf4a; }
+.border-top-color-blue{
+  border-top: 3px solid #45d3d3;
+}
+ 
+
+@media screen and (max-width: 760px){
+  .grid{
+    display: block;
+    max-width: 100%;
+  }
+  .card{
+    margin: 10px auto;
+  }
+  footer{
+    text-align: center;
+    margin: 15px;
+  }
+}
